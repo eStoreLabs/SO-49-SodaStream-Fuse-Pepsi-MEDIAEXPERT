@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+// set up variables
+
+$text-main: "font-name", sans-serif;
+$text-secondary: "font-name", sans-serif;
+
+$fw-regular: 400;
+$fw-bold: 700;
+
+$fs-base: 16px;
+$fs-header: 32px;
+
+$px-S: 8px;
+$px-M: 16px;
+$px-L: 24px;
+$px-XL: 32px;
+$px-XXL: 40px;
+
+$color-main: #0d1116;
+$color-bg: #f6f8fa;
+$color-accent: #f6a255;
+$color-accent-2: #69a7dd;
+
+$media-breakpoint-sm: 576px;
+$media-breakpoint-md: 768px;
+$media-breakpoint-lg: 992px;
+$media-breakpoint-xl: 1200px;
+
+#es-rc #es-rc-content {
+  font-family: $text-main;
+  font-size: $fs-base;
+  font-weight: $fw-regular;
+  line-height: 1.2;
+  color: $color-main;
+  background-color: $color-bg;
+  max-width: 990px; //adjust, based on https://github.com/eStoreLabs/READ-ME/blob/main/DEVELOPMENT_GUIDELINES_FOR_GENERICS.md#2-styles
+  margin: auto;
+
+  ::selection {
+    background-color: $color-accent-2;
+    color: #fff;
+  }
+
+  // minimal css reset
+
+  * {
+    box-sizing: border-box;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  button {
+    display: block;
+  }
+
+  .es-section-title {
+    font-family: $text-secondary;
+    font-size: $fs-header;
+    font-weight: $fw-bold;
+    text-align: center;
+    margin-block: $px-M;
+  }
+
+  .es-kv {
+    background-color: $color-bg;
+    &__img {
+      &--desktop {
+        display: none;
+      }
+      @media (min-width: $media-breakpoint-md) {
+        &--mobile {
+          display: none;
+        }
+        &--desktop {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .es-section {
+    margin-block: $px-M;
+
+    &__button {
+      background-color: $color-accent;
+      padding: $px-S $px-M;
+      cursor: pointer;
+      margin: auto;
+
+      @media (min-width: $media-breakpoint-md) {
+        background-color: $color-accent-2;
+      }
+    }
+  }
+
+  // other sections
+
+  // accessibility improvement for animations
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

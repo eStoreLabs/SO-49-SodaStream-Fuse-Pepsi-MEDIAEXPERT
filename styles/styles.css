@@ -1,0 +1,67 @@
+#es-rc #es-rc-content {
+  font-family: "font-name", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #0d1116;
+  background-color: #f6f8fa;
+  max-width: 990px;
+  margin: auto;
+}
+#es-rc #es-rc-content ::-moz-selection {
+  background-color: #69a7dd;
+  color: #fff;
+}
+#es-rc #es-rc-content ::selection {
+  background-color: #69a7dd;
+  color: #fff;
+}
+#es-rc #es-rc-content * {
+  box-sizing: border-box;
+}
+#es-rc #es-rc-content p {
+  margin: 0;
+}
+#es-rc #es-rc-content img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-rc #es-rc-content button {
+  display: block;
+}
+#es-rc #es-rc-content .es-section-title {
+  font-family: "font-name", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-block: 16px;
+}
+#es-rc #es-rc-content .es-kv {
+  background-color: #f6f8fa;
+}
+#es-rc #es-rc-content .es-kv__img--desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-kv__img--mobile {
+    display: none;
+  }
+  #es-rc #es-rc-content .es-kv__img--desktop {
+    display: block;
+  }
+}
+#es-rc #es-rc-content .es-section {
+  margin-block: 16px;
+}
+#es-rc #es-rc-content .es-section__button {
+  background-color: #f6a255;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  #es-rc #es-rc-content .es-section__button {
+    background-color: #69a7dd;
+  }
+}/*# sourceMappingURL=styles.css.map */
