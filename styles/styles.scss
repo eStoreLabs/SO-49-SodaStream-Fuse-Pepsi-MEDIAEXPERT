@@ -34,7 +34,7 @@ $media-breakpoint-xl: 1200px;
   line-height: 1.2;
   color: $color-main;
   background-color: $color-bg;
-  max-width: 990px; //adjust, based on https://github.com/eStoreLabs/READ-ME/blob/main/DEVELOPMENT_GUIDELINES_FOR_GENERICS.md#2-styles
+  max-width: 1300px;
   margin: auto;
 
   ::selection {
@@ -69,40 +69,6 @@ $media-breakpoint-xl: 1200px;
     text-align: center;
     margin-block: $px-M;
   }
-
-  .es-kv {
-    background-color: $color-bg;
-    &__img {
-      &--desktop {
-        display: none;
-      }
-      @media (min-width: $media-breakpoint-md) {
-        &--mobile {
-          display: none;
-        }
-        &--desktop {
-          display: block;
-        }
-      }
-    }
-  }
-
-  .es-section {
-    margin-block: $px-M;
-
-    &__button {
-      background-color: $color-accent;
-      padding: $px-S $px-M;
-      cursor: pointer;
-      margin: auto;
-
-      @media (min-width: $media-breakpoint-md) {
-        background-color: $color-accent-2;
-      }
-    }
-  }
-
-  // other sections
 
   // accessibility improvement for animations
   @media (prefers-reduced-motion: reduce) {
