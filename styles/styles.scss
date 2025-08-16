@@ -95,6 +95,10 @@ $media-breakpoint-xl: 1200px;
     font-size: $fs-header;
     text-align: center;
     margin-block: $px-M;
+    text-transform: uppercase;
+    @container es-rc-content (min-width: 660px) {
+      font-size: $fs-header * 1.5;
+    }
   }
 
   .es-mobile {
@@ -281,6 +285,92 @@ $media-breakpoint-xl: 1200px;
           &__img {
             width: 60%;
           }
+        }
+      }
+    }
+  }
+
+  .es-design {
+    &__img-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $px-M;
+      margin-block: $px-XXL;
+    }
+    &__description-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $px-M;
+    }
+    &__description {
+      text-align: center;
+
+      &--statement {
+        font-family: $font-black;
+        font-size: 24px;
+        margin-bottom: $px-S;
+      }
+      &--disclaimer {
+        font-family: $font-light;
+        font-size: 16px;
+        font-style: italic;
+      }
+    }
+    &__logo {
+      max-width: 150px;
+    }
+    &__text-container {
+      font-size: 20px;
+      text-align: center;
+    }
+    &__text {
+      &--bold {
+        font-family: $font-bold;
+      }
+      &--light {
+        font-family: $font-light;
+      }
+    }
+    @container es-rc-content (min-width: 660px) {
+      &__img-container {
+        flex-direction: row;
+        align-items: flex-start;
+        position: relative;
+      }
+      &__img {
+        max-width: 80%;
+        margin-left: 30px;
+      }
+      &__description-container {
+        position: absolute;
+        max-width: 200px;
+        right: 0;
+        top: 0;
+      }
+      &__description {
+        text-align: right;
+      }
+      &__logo {
+        width: 100px;
+        margin-right: 0;
+      }
+      &__text-container {
+        font-size: 24px;
+      }
+    }
+    @container es-rc-content (min-width: 880px) {
+      &__description {
+        &-container {
+          right: 4%;
+          top: 6%;
+        }
+        &--statement {
+          font-size: 32px;
+        }
+        &--disclaimer {
+          font-size: 18px;
         }
       }
     }

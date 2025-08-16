@@ -54,6 +54,12 @@
   font-size: 32px;
   text-align: center;
   margin-block: 16px;
+  text-transform: uppercase;
+}
+@container es-rc-content (min-width: 660px) {
+  #es-rc #es-rc-content .es-section-title {
+    font-size: 48px;
+  }
 }
 #es-rc #es-rc-content .es-mobile {
   display: block;
@@ -226,5 +232,83 @@
   }
   #es-rc #es-rc-content .es-kv__description__icon__img {
     width: 60%;
+  }
+}
+#es-rc #es-rc-content .es-design__img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-block: 48px;
+}
+#es-rc #es-rc-content .es-design__description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+#es-rc #es-rc-content .es-design__description {
+  text-align: center;
+}
+#es-rc #es-rc-content .es-design__description--statement {
+  font-family: "HurmeGeometricSans3-Black", sans-serif;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+#es-rc #es-rc-content .es-design__description--disclaimer {
+  font-family: "HurmeGeometricSans3-Light", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+#es-rc #es-rc-content .es-design__logo {
+  max-width: 150px;
+}
+#es-rc #es-rc-content .es-design__text-container {
+  font-size: 20px;
+  text-align: center;
+}
+#es-rc #es-rc-content .es-design__text--bold {
+  font-family: "HurmeGeometricSans3-Bold", sans-serif;
+}
+#es-rc #es-rc-content .es-design__text--light {
+  font-family: "HurmeGeometricSans3-Light", sans-serif;
+}
+@container es-rc-content (min-width: 660px) {
+  #es-rc #es-rc-content .es-design__img-container {
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-design__img {
+    max-width: 80%;
+    margin-left: 30px;
+  }
+  #es-rc #es-rc-content .es-design__description-container {
+    position: absolute;
+    max-width: 200px;
+    right: 0;
+    top: 0;
+  }
+  #es-rc #es-rc-content .es-design__description {
+    text-align: right;
+  }
+  #es-rc #es-rc-content .es-design__logo {
+    width: 100px;
+    margin-right: 0;
+  }
+  #es-rc #es-rc-content .es-design__text-container {
+    font-size: 24px;
+  }
+}
+@container es-rc-content (min-width: 880px) {
+  #es-rc #es-rc-content .es-design__description-container {
+    right: 4%;
+    top: 6%;
+  }
+  #es-rc #es-rc-content .es-design__description--statement {
+    font-size: 32px;
+  }
+  #es-rc #es-rc-content .es-design__description--disclaimer {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=styles.css.map */
