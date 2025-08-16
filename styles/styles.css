@@ -1,5 +1,21 @@
+@font-face {
+  font-family: "HurmeGeometricSans3-Bold";
+  src: local("HurmeGeometricSans3-Bold"), url("../fonts/HurmeGeometricSans3-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "HurmeGeometricSans3-Regular";
+  src: local("HurmeGeometricSans3-Regular"), url("../fonts/HurmeGeometricSans3-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "HurmeGeometricSans3-Black";
+  src: local("HurmeGeometricSans3-Black"), url("../fonts/HurmeGeometricSans3-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "HurmeGeometricSans3-Light";
+  src: local("HurmeGeometricSans3-Light"), url("../fonts/HurmeGeometricSans3-Light.woff2") format("woff2");
+}
 #es-rc #es-rc-content {
-  font-family: "font-name", sans-serif;
+  font-family: "HurmeGeometricSans3-Regular", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
@@ -31,7 +47,7 @@
   display: block;
 }
 #es-rc #es-rc-content .es-section-title {
-  font-family: "font-name", sans-serif;
+  font-family: "HurmeGeometricSans3-Bold", sans-serif;
   font-size: 32px;
   font-weight: 700;
   text-align: center;

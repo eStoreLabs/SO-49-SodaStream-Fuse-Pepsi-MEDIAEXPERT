@@ -1,9 +1,35 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: "HurmeGeometricSans3-Bold";
+  src: local("HurmeGeometricSans3-Bold"),
+    url("../fonts/HurmeGeometricSans3-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HurmeGeometricSans3-Regular";
+  src: local("HurmeGeometricSans3-Regular"),
+    url("../fonts/HurmeGeometricSans3-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HurmeGeometricSans3-Black";
+  src: local("HurmeGeometricSans3-Black"),
+    url("../fonts/HurmeGeometricSans3-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HurmeGeometricSans3-Light";
+  src: local("HurmeGeometricSans3-Light"),
+    url("../fonts/HurmeGeometricSans3-Light.woff2") format("woff2");
+}
+
 // set up variables
 
-$text-main: "font-name", sans-serif;
-$text-secondary: "font-name", sans-serif;
+$font-regular: "HurmeGeometricSans3-Regular", sans-serif;
+$font-bold: "HurmeGeometricSans3-Bold", sans-serif;
+$font-black: "HurmeGeometricSans3-Black", sans-serif;
+$font-light: "HurmeGeometricSans3-Light", sans-serif;
 
 $fw-regular: 400;
 $fw-bold: 700;
@@ -28,7 +54,7 @@ $media-breakpoint-lg: 992px;
 $media-breakpoint-xl: 1200px;
 
 #es-rc #es-rc-content {
-  font-family: $text-main;
+  font-family: $font-regular;
   font-size: $fs-base;
   font-weight: $fw-regular;
   line-height: 1.2;
@@ -63,7 +89,7 @@ $media-breakpoint-xl: 1200px;
   }
 
   .es-section-title {
-    font-family: $text-secondary;
+    font-family: $font-bold;
     font-size: $fs-header;
     font-weight: $fw-bold;
     text-align: center;
