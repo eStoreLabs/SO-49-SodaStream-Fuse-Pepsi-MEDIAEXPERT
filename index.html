@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sodastream Fuse Pepsi</title>
-    <!-- TODO: link google fonts here -->
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -87,9 +87,33 @@
                     </p>
                 </div>
             </div>
+            <div class="es-slider es-section">
+                <!-- Slider main container -->
+                <div class="swiper es-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper es-swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide es-slide">Slide 1</div>
+                        <div class="swiper-slide es-slide">Slide 2</div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="es-slider__buttons">
+                        <div class="swiper-button-prev es-swiper-button-prev">
+                            <img class="es-slider__buttons--prev__img" src="./images/btn-next.png"
+                                alt="Cofnij do poprzedniego slajdu">
+                        </div>
+                        <div class="swiper-button-next es-swiper-button-next">
+                            <img class="es-slider__buttons--next__img" src="./images/btn-next.png"
+                                alt="Przewiń do następnego slajdu">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="./scripts/click.js"></script>
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiperInit.js" defer></script>
 </body>
 
 </html>

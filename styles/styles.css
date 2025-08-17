@@ -311,4 +311,33 @@
   #es-rc #es-rc-content .es-design__description--disclaimer {
     font-size: 18px;
   }
+}
+#es-rc #es-rc-content .es-slider .swiper-button-prev:after,
+#es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,
+#es-rc #es-rc-content .es-slider .swiper-button-next:after,
+#es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after {
+  content: "";
+}
+#es-rc #es-rc-content .es-slider .swiper-button-next,
+#es-rc #es-rc-content .es-slider .swiper-button-prev {
+  width: unset;
+  height: unset;
+  position: static;
+  justify-content: unset;
+  margin: 0;
+  display: unset;
+}
+#es-rc #es-rc-content .es-slider__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#es-rc #es-rc-content .es-slider__buttons--prev__img, #es-rc #es-rc-content .es-slider__buttons--next__img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+}
+#es-rc #es-rc-content .es-slider__buttons--prev__img {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=styles.css.map */
