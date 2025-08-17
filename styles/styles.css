@@ -327,7 +327,6 @@
   height: unset;
   position: static;
   justify-content: unset;
-  margin: 0;
   display: unset;
 }
 #es-rc #es-rc-content .es-slider__buttons {
@@ -346,6 +345,9 @@
 }
 #es-rc #es-rc-content .es-slider__buttons--prev__img {
   transform: rotate(180deg);
+}
+#es-rc #es-rc-content .es-slider__buttons--next {
+  margin-left: auto;
 }
 #es-rc #es-rc-content .es-slider__slide {
   display: flex;

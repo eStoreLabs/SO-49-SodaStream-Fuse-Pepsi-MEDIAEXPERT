@@ -390,7 +390,6 @@ $media-breakpoint-xl: 1200px;
       height: unset;
       position: static;
       justify-content: unset;
-      margin: 0;
       display: unset;
     }
     // swiper styles reset END
@@ -412,6 +411,9 @@ $media-breakpoint-xl: 1200px;
       }
       &--prev__img {
         transform: rotate(180deg);
+      }
+      &--next {
+        margin-left: auto;
       }
     }
     &__slide {
