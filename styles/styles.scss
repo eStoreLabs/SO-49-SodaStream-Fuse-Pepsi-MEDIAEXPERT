@@ -31,7 +31,7 @@ $font-bold: "HurmeGeometricSans3-Bold", sans-serif;
 $font-black: "HurmeGeometricSans3-Black", sans-serif;
 $font-light: "HurmeGeometricSans3-Light", sans-serif;
 
-$fs-base: 16px;
+$fs-base: 20px;
 $fs-header: 32px;
 
 $px-S: 8px;
@@ -377,6 +377,7 @@ $media-breakpoint-xl: 1200px;
   }
 
   .es-slider {
+    // swiper styles reset START
     .swiper-button-prev:after,
     .swiper-rtl .swiper-button-next:after,
     .swiper-button-next:after,
@@ -392,19 +393,80 @@ $media-breakpoint-xl: 1200px;
       margin: 0;
       display: unset;
     }
+    // swiper styles reset END
+    margin-block: $px-XL;
+
     &__buttons {
       display: flex;
       width: 100%;
       justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      padding: $px-XL;
       &--prev__img,
       &--next__img {
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 48px;
+        height: 48px;
         margin: 0;
       }
       &--prev__img {
         transform: rotate(180deg);
+      }
+    }
+    &__slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $px-L;
+      padding: $px-XL;
+      &__right {
+        display: flex;
+        flex-direction: column;
+        gap: $px-M;
+        text-align: center;
+      }
+      &__title {
+        font-family: $font-black;
+      }
+      &__text {
+        padding-right: 32px;
+      }
+      &--1 {
+        background-color: $color-bg;
+        color: $color-main;
+      }
+      &--2 {
+        background-color: $color-main;
+        color: $color-bg;
+        ::selection {
+          background-color: $color-bg;
+          color: $color-main;
+        }
+      }
+    }
+    @container es-rc-content (min-width: 660px) {
+      &__slide {
+        gap: $px-XXL;
+        font-size: 24px;
+        &__right {
+          gap: $px-L;
+        }
+      }
+    }
+    @container es-rc-content (min-width: 756px) {
+      &__slide {
+        flex-direction: row;
+        &__right {
+          text-align: left;
+          flex: 1 1 0;
+        }
+        &__left {
+          flex: 1 1 0;
+        }
+        &__text {
+          padding-right: 48px;
+        }
       }
     }
   }
