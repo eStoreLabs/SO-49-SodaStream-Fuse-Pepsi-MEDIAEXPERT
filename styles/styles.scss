@@ -44,12 +44,6 @@ $px-XXXL: 64px;
 $color-main: #eeeae5;
 $color-bg: #13294b;
 $color-accent: #005bab;
-$color-accent-2: #ea1c2d;
-
-$media-breakpoint-sm: 576px;
-$media-breakpoint-md: 768px;
-$media-breakpoint-lg: 992px;
-$media-breakpoint-xl: 1200px;
 
 #es-rc #es-rc-content {
   font-family: $font-regular;
@@ -57,7 +51,7 @@ $media-breakpoint-xl: 1200px;
   line-height: 1.2;
   color: $color-main;
   background-color: $color-bg;
-  max-width: 990px;
+  max-width: 999px;
   margin: auto;
   container: es-rc-content / inline-size;
 
