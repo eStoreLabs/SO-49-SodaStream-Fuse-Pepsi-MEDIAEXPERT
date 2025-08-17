@@ -9,7 +9,7 @@
     // Optional parameters
     direction: "horizontal",
     loop: false,
-    autoheight: true,
+    autoHeight: true,
 
     // Navigation arrows
     navigation: {
