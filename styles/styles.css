@@ -546,4 +546,21 @@
   #es-rc #es-rc-content .es-features__container__item--3 {
     left: 13%;
   }
+}
+#es-rc #es-rc-content .es-footer {
+  margin-bottom: 64px;
+}
+#es-rc #es-rc-content .es-footer .es-section-title {
+  text-transform: none;
+}
+#es-rc #es-rc-content .es-footer__headline {
+  font-size: 24px;
+}
+#es-rc #es-rc-content .es-footer__logo {
+  max-width: 200px;
+}
+@container es-rc-content (min-width: 660px) {
+  #es-rc #es-rc-content .es-footer__headline {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=styles.css.map */

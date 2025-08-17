@@ -620,4 +620,23 @@ $media-breakpoint-xl: 1200px;
       }
     }
   }
+
+  .es-footer {
+    margin-bottom: $px-XXXL;
+    .es-section-title {
+      text-transform: none;
+    }
+    &__headline {
+      font-size: 24px;
+    }
+    &__logo {
+      max-width: 200px;
+    }
+
+    @container es-rc-content (min-width: 660px) {
+      &__headline {
+        font-size: 32px;
+      }
+    }
+  }
 }
