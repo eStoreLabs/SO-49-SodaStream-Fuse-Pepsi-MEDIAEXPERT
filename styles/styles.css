@@ -115,6 +115,7 @@
 }
 #es-rc #es-rc-content .es-kv__description__text {
   font-size: 20px;
+  text-align: center;
 }
 @container es-rc-content (min-width: 440px) {
   #es-rc #es-rc-content .es-kv__title--headline {
@@ -168,6 +169,7 @@
   }
   #es-rc #es-rc-content .es-kv__description__text {
     max-width: 315px;
+    text-align: left;
   }
   #es-rc #es-rc-content .es-kv__description__icon__img {
     width: 100px;
@@ -537,7 +539,7 @@
 }
 @container es-rc-content (min-width: 880px) {
   #es-rc #es-rc-content .es-features__container__item--1 {
-    top: 2%;
+    top: 0%;
     left: 1%;
   }
   #es-rc #es-rc-content .es-features__container__item--2 {

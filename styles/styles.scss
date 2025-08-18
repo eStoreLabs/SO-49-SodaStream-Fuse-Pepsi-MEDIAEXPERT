@@ -149,6 +149,7 @@ $color-accent: #005bab;
     &__description {
       &__text {
         font-size: 20px;
+        text-align: center;
       }
     }
     @container es-rc-content (min-width: 440px) {
@@ -206,6 +207,7 @@ $color-accent: #005bab;
         width: 100%;
         &__text {
           max-width: 315px;
+          text-align: left;
         }
         &__icon__img {
           width: 100px;
@@ -601,7 +603,7 @@ $color-accent: #005bab;
       &__container {
         &__item {
           &--1 {
-            top: 2%;
+            top: 0%;
             left: 1%;
           }
           &--2 {
