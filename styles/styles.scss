@@ -585,7 +585,7 @@ $color-accent: #005bab;
           position: absolute;
           max-width: 290px;
           &--1 {
-            top: 2%;
+            top: 0%;
             left: 1%;
           }
           &--2 {
@@ -603,7 +603,6 @@ $color-accent: #005bab;
       &__container {
         &__item {
           &--1 {
-            top: 0%;
             left: 1%;
           }
           &--2 {
